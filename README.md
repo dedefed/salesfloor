@@ -19,3 +19,8 @@ composer_install
 ```bash
 php bin/console app:block-command commands.txt 
 ```
+
+3) Unit test
+```bash
+./bin/phpunit
+```
