@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f143832e85df629dc1a54d892987b0d4",
+    "content-hash": "ff76d2c20cac0e1ffb6df8957e7763c4",
     "packages": [
         {
             "name": "psr/cache",
@@ -1137,6 +1137,72 @@
             "time": "2019-02-03T12:47:33+00:00"
         },
         {
+            "name": "symfony/phpunit-bridge",
+            "version": "v4.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/phpunit-bridge.git",
+                "reference": "4ea7d80a7512ddc41d5af598978edcd395140edc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/phpunit-bridge/zipball/4ea7d80a7512ddc41d5af598978edcd395140edc",
+                "reference": "4ea7d80a7512ddc41d5af598978edcd395140edc",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0"
+            },
+            "suggest": {
+                "ext-zip": "Zip support is required when using bin/simple-phpunit",
+                "symfony/debug": "For tracking deprecated interfaces usages at runtime with DebugClassLoader"
+            },
+            "bin": [
+                "bin/simple-phpunit"
+            ],
+            "type": "symfony-bridge",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                },
+                "thanks": {
+                    "name": "phpunit/phpunit",
+                    "url": "https://github.com/sebastianbergmann/phpunit"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Bridge\\PhpUnit\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony PHPUnit Bridge",
+            "homepage": "https://symfony.com",
+            "time": "2019-01-24T21:39:51+00:00"
+        },
+        {
             "name": "symfony/polyfill-mbstring",
             "version": "v1.10.0",
             "source": {
@@ -1189,6 +1255,61 @@
             "keywords": [
                 "compatibility",
                 "mbstring",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2018-09-21T13:07:52+00:00"
+        },
+        {
+            "name": "symfony/polyfill-php72",
+            "version": "v1.10.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-php72.git",
+                "reference": "9050816e2ca34a8e916c3a0ae8b9c2fccf68b631"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-php72/zipball/9050816e2ca34a8e916c3a0ae8b9c2fccf68b631",
+                "reference": "9050816e2ca34a8e916c3a0ae8b9c2fccf68b631",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Polyfill\\Php72\\": ""
+                },
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting some PHP 7.2+ features to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "compatibility",
                 "polyfill",
                 "portable",
                 "shim"
@@ -1271,6 +1392,82 @@
                 "url"
             ],
             "time": "2019-01-29T09:49:29+00:00"
+        },
+        {
+            "name": "symfony/var-dumper",
+            "version": "v4.2.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/var-dumper.git",
+                "reference": "223bda89f9be41cf7033eeaf11bc61a280489c17"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/var-dumper/zipball/223bda89f9be41cf7033eeaf11bc61a280489c17",
+                "reference": "223bda89f9be41cf7033eeaf11bc61a280489c17",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1.3",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php72": "~1.5"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<4.8.35|<5.4.3,>=5.0",
+                "symfony/console": "<3.4"
+            },
+            "require-dev": {
+                "ext-iconv": "*",
+                "symfony/console": "~3.4|~4.0",
+                "symfony/process": "~3.4|~4.0",
+                "twig/twig": "~1.34|~2.4"
+            },
+            "suggest": {
+                "ext-iconv": "To convert non-UTF-8 strings to UTF-8 (or symfony/polyfill-iconv in case ext-iconv cannot be used).",
+                "ext-intl": "To show region name in time zone dump",
+                "symfony/console": "To use the ServerDumpCommand and/or the bin/var-dump-server script"
+            },
+            "bin": [
+                "Resources/bin/var-dump-server"
+            ],
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.2-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "Resources/functions/dump.php"
+                ],
+                "psr-4": {
+                    "Symfony\\Component\\VarDumper\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony mechanism for exploring and dumping PHP variables",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "debug",
+                "dump"
+            ],
+            "time": "2019-01-30T11:44:30+00:00"
         },
         {
             "name": "symfony/var-exporter",
