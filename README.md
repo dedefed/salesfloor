@@ -1,6 +1,5 @@
-# Test SalesFloor
+# Test Php robot logic
 
-Test for SalesFloor position
 I use Symfony 4 but I'm just add what I need to create command.
 It's also more easy to me to do the test, seems I an familiar with the framework.
 
